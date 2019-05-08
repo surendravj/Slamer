@@ -1,0 +1,48 @@
+<%-include("layouts/success")-%>
+<div class="container-fluid posts">
+    <div class="infobar col-md-2 col-sm-12  ">
+        <div class="text-center">
+            <img src="../images/posts.png">
+        </div>
+        <div class="list-group">
+            <li class="list-group-item list-group-item-action bg-primary text-white text-center" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;letter-spacing: 0.1rem;font-size: 20px;text-transform: uppercase">Profile</li>
+            <li class="list-group-item list-group-item-action"><span class="post-heading">Name:</span>
+                <%=name%>
+            </li>
+            <li class="list-group-item list-group-item-action"><span class="post-heading">Book:</span>
+                <%=bookname%>
+            </li>
+            <li class="list-group-item list-group-item-action"><span class="post-heading">My-Id:</span>
+                <%=id%>
+            </li>
+        </div>
+    </div>
+
+    <div class=" col-md-8 col-sm-12 col-xs-12 posts-container">
+        <div class="form-group">
+            <p class="Compose_Here">Compose Here</p>
+            <form action="/add_post" method="post">
+                <input type="hidden" name="post_name" class="form-control" value="<%=name%>" required>
+                <textarea name="post_content" id="" cols="30" rows="10" class="form-control" required style="height:100px"></textarea>
+                <button type="submit" class="btn btn-primary " style="margin-top:5px;">Post</button>
+            </form>
+        </div>
+        <% post_data.forEach(element => {%>
+        <div class="box_post shadow p-3 mb-5 bg-white rounded">
+            <div class="post_address">
+                <img src="../images/post_user.png" alt="" style="width:30px;">
+                posted by <span class="post_name">
+                    <%=element.name%></span>
+                <a href="/likes/<%=element._id%>" style="float: right">Like</a>
+            </div>
+            <%=element.post%>
+            <br><span class="likes">
+                <%=element.likes%> Like</span>
+            <div class="post-footer">
+                <%=element.date%>
+            </div>
+        </div>
+        <%})%>
+    </div>
+</div>
+<%-include("layouts/footer")-%>

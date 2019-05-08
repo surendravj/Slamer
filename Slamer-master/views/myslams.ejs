@@ -1,0 +1,16 @@
+<%-include("layouts/success")-%>
+<div class="container text-center ">
+  <%arraydata.forEach((ele)=>{%>
+  <div class="container myslams text-left">
+    <img src="../images/users.png" alt="Avatar" style="width:90px">
+    <p style="text-transform: capitalize"><span>
+        <%=ele.a%><br></span>
+      <%=ele.b%>
+    </p>
+    <div class="text-right">
+      <a href="/myslams-view/<%=ele._id%>" class="btn btn-success text-center">View</a>
+    </div>
+  </div>
+  <%})%>
+</div>
+<%-include("layouts/footer")-%>

@@ -1,0 +1,25 @@
+<%-include("layouts/header")-%>
+<div class="container signin">
+  <div class="form-group signin-main col-md-6 col-sm-12">
+    <p class="warning" id="warning">
+      <%=warning%>
+    </p>
+    <form action="/signin" method="POST">
+      <h2 id="signup-head">My Book</h2><br>
+      <div class="input-container">
+        <i class="fa fa-id-badge icon"></i>
+        <input class="input-field" type="number" placeholder="Your Id" name="id" required>
+      </div>
+
+      <div class="input-container">
+        <i class="fa fa-key  icon"></i>
+        <input class="input-field" type="password" placeholder="Your Password" name="password" required>
+      </div>
+      <button class="btn btn-primary btn-text">Find Me</button>
+    </form>
+  </div>
+  <div class="back">
+    <a href="/"><i class="fas fa-arrow-circle-left" style="color:#000;font-size:45px;"></i></a>
+  </div>
+</div>
+<%-include("layouts/footer")-%>

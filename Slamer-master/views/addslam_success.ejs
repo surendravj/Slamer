@@ -1,0 +1,37 @@
+<%-include("layouts/header")-%>
+<div class="container">
+  <form action="/add_slam_insert" class="addslam" method="POST">
+    <div class="container addslam-container ">
+      <h2>Hi ! I am
+        <%=name%>
+      </h2>
+      <p style="text-transform:capitalize"> here are the questions let's make it simple
+
+      </p>
+    </div>
+    <div class="container qns">
+      <label for="">1) : May I Know Your Name ?</label>
+      <input type="text" class="form-control" name="question1">
+      <label for="">2) : How Can You Define Yourself With Three Words ?</label>
+      <textarea id="" cols="30" name="question2" rows="10" class="form-control" style="height:100px"></textarea>
+      <label for="">3) : What Was The First Impression U get When U see Me ?</label>
+      <textarea id="" cols="30" rows="10" name="question3" class="form-control" style="height:100px"></textarea>
+      <label for="">4) : Can You Describe Me In Three Words ?</label>
+      <textarea id="" cols="30" rows="10" name="question4" class="form-control" style="height:100px"></textarea>
+      <label for="">5) : Please Can U Write A Peom For Me ?</label>
+      <textarea cols="30" rows="10" class="form-control" name="question5" style="height:100px"></textarea>
+      <label for="">6) :What Crime Do You Think We Will be arrested for ?</label>
+      <textarea id="" cols="30" rows="10" class="form-control " name="question6" style="height:100px"></textarea>
+      <label for="">7) : Do You Think I am Virgin If Yes "Y" If No "Y" ?</label>
+      <textarea id="" cols="30" rows="10" class="form-control" name="question7" style="height:100px"></textarea>
+      <label for="">8) : If I Marry Your Boyfriend Or Girlfriend What Would U Do ?</label>
+      <textarea id="" cols="30" rows="10" class="form-control" name="question8" style="height:100px"></textarea>
+      <label for="">9) :Can You Kill Me For 1000 Crores Be Frank ?</label>
+      <textarea id="" cols="30" rows="10" class="form-control" name="question9" style="height:100px"></textarea>
+      <label for="">10): Best Moment With Me ....?</label>
+      <textarea id="" cols="30" rows="10" name="question10" class="form-control" style="height:100px"></textarea>
+      <button class="btn btn-info btn-block" type="submit">Add It</button>
+    </div>
+  </form>
+</div>
+<%-include("layouts/footer")-%>

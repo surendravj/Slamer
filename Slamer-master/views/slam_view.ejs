@@ -1,0 +1,69 @@
+<%-include("layouts/success")-%>
+<div class="container">
+  <%data.forEach((ele)=>{%>
+  <div class=" view-slams ">
+    <div class="shadow p-2 mb-5 bg-white rounded text-left">
+      <label for="">1) : May I Know Your Name ?</label><br>
+      <p>
+        <%=ele.a%>
+      </p>
+
+    </div>
+    <div class="shadow p-3 mb-5 bg-white rounded text-left">
+      <label for="">2) : How Can You Define Yourself With Three Words ?</label><br>
+      <p>
+        <%=ele.b%>
+      </p>
+    </div>
+    <div class="shadow p-3 mb-5 bg-white rounded text-left">
+      <label for="">3) : What Was The First Impression U get When U see Me ?</label><br>
+      <p>
+        <%=ele.c%>
+      </p>
+    </div>
+    <div class="shadow p-3 mb-5 bg-white rounded text-left">
+      <label for="">4) : Can You Describe Me In Three Words ?</label><br>
+      <p>
+        <%=ele.d%>
+      </p>
+    </div>
+    <div class="shadow p-3 mb-5 bg-white rounded text-left">
+      <label for="">5) : Please Can U Write A Peom For Me ?</label><br>
+      <p>
+        <%=ele.e%>
+      </p>
+    </div>
+    <div class="shadow p-3 mb-5 bg-white rounded text-left">
+      <label for="">6) :What Crime Do You Think We Will be arrested for ?</label><br>
+      <p>
+        <%=ele.f%>
+      </p>
+    </div>
+    <div class="shadow p-3 mb-5 bg-white rounded text-left">
+      <label for="">7) : Do You Think I am Virgin If Yes "Y" If No "Y" ?</label><br>
+      <p>
+        <%=ele.g%>
+      </p>
+    </div>
+    <div class="shadow p-3 mb-5 bg-white rounded text-left">
+      <label for="">8) : If I Marry Your Boyfriend Or Girlfriend What Would U Do ?</label><br>
+      <p>
+        <%=ele.h%>
+      </p>
+    </div>
+    <div class="shadow p-3 mb-5 bg-white rounded text-left">
+      <label for="">9) :Can You Kill Me For 1000 Crores Be Frank ?</label><br>
+      <p>
+        <%=ele.i%>
+      </p>
+    </div>
+    <div class="shadow p-3 mb-5 bg-white rounded text-left">
+      <label for="">10): Best Moment With Me ....?</label><br>
+      <p>
+        <%=ele.j%>
+      </p>
+    </div>
+  </div>
+</div>
+<%})%>
+<%-include("layouts/footer")-%>

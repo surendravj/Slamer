@@ -1,0 +1,20 @@
+<%-include("layouts/header")-%>
+<div class="container col col-md-4" id="addslam">
+    <p id="warning">
+        <%=warning%>
+    </p>
+    <h2 id="signup-head">Add Slam</h2><br>
+    <form action="/add_slam" method="POST">
+        <div class="input-container">
+            <i class="fa fa-id-badge icon"></i>
+            <input class="input-field" type="number" placeholder="Book Id" name="id" required>
+        </div>
+        <button class="btn btn-primary">Find Me</button>
+    </form>
+
+    <div class="back">
+        <a href="/"><i class="fas fa-arrow-circle-left" style="color:#000;font-size:45px;"></i></a>
+    </div>
+</div>
+</div>
+<%-include("layouts/footer")-%>

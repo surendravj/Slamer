@@ -1,0 +1,33 @@
+<%-include("layouts/header")-%>
+<div class="container signup">
+  <p id="warning">
+    <%=warning%>
+  </p>
+  <form action="/signup" method="POST">
+    <h2 id="signup-head">Create Book</h2><br>
+    <div class="input-container">
+      <i class="fa fa-user icon"></i>
+      <input class="input-field" type="text" placeholder="Name" name="admin" required>
+    </div>
+    <div class="input-container">
+      <i class="fa fas fa-book icon"></i>
+      <input class="input-field" type="text" placeholder="Book Name" name="bookname" required>
+    </div>
+
+    <div class="input-container">
+      <i class="fa fa-key icon"></i>
+      <input class="input-field" type="password" placeholder="Password" name="password" required>
+    </div>
+
+    <div class="input-container">
+      <i class="fas fa-id-badge icon"></i>
+      <input class="input-field" type="password" placeholder="Book-Id" name="id" required>
+    </div>
+
+    <button type="submit" class="btn signup-btn">Register</button>
+  </form>
+  <div class="back">
+    <a href="/"><i class="fas fa-arrow-circle-left" style="color:#000;font-size:45px;"></i></a>
+  </div>
+</div>
+<%-include("layouts/footer")-%>
